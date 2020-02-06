@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="battle.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="Homepage_header">
+      <img id="pokemonTitle" src="picture/pokemon.png" />
+    </header>
+    <div class="gridBodyBattle">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="index.html">PokéSearch</a></li>
+          <li><a href="battle.html">Battle</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="BattlePokemonInput">
+        <div class="selectPoke">
+          <h1 id="title1">Choose Your Pokémon</h1>
+          <input type="text" />
+          <button id="button2" onclick="myFunction1()">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <button id="battle" onclick="myFunction()" style="display: none;">
+        BATTLE!
+      </button>
+
+      <div class="OppPokemon"></div>
+      <div class="player1"></div>
+      <div class="Battlestats"></div>
+      <div class="PokemonImage"></div>
+      <div class="butt1" style="display: none;">
+        <button class="move1"></button>
+        <button class="move2"></button>
+        <button class="move3"></button>
+        <button class="move4"></button>
+      </div>
+      <div class="userPokemonMoves"></div>
+      <div class="userPokemonMoveStat"></div>
+
+      <div class="OppStat"></div>
+      <div class="OppMoves"></div>
+      <div class="Movestats"></div>
+      <div id="uhp">
+        <div id="userHP"></div>
+        <div id="userHPbear"></div>
+      </div>
+
+      <div id="OppHPbar"></div>
+
+      <div id="OppHP"></div>
+      <div id="textBox"></div>
+    </div>
+  </body>
+</html>

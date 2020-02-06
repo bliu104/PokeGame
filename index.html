@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="indexBody">
+    <header>
+      <img id="pokemonTitle" src="picture/pokemon.png" />
+    </header>
+    <div class="gridBodyIndex">
+      <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="index.html">PokéSearch</a></li>
+          <li><a href="battle.html">Battle</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="selectPokeIndex">
+        <h1 id="title1">Pokédex</h1>
+        <input type="text" />
+        <button id="GO!"><i class="fa fa-search"></i></button>
+      </div>
+      <div class="Pokemon_info"></div>
+      <div class="PokePics"></div>
+      <div class="Pokemon_stat"></div>
+      <div class="Pokemon_moves">
+        <ul id="moveSet"></ul>
+      </div>
+    </div>
+  </body>
+</html>

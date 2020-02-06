@@ -1,0 +1,267 @@
+@media only screen and (min-width: 560px) {
+  .gridBodyBattle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 250px 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url("picture/Background3.png");
+    background-size: cover;
+  }
+
+  .Pokemon_stat {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #moveSet {
+    column-count: 3;
+  }
+  #battle {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 50%;
+    height: 50%;
+    justify-content: baseline;
+  }
+  #imgOpp {
+    width: 100%;
+  }
+  #UserIMG {
+    width: 100%;
+  }
+  .usePokemon {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .BattlePokemonInput {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 0;
+    grid-row-end: 1;
+
+    align-content: flex-start;
+  }
+  .selectPokeIndex {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    text-align: center;
+  }
+  .PokePics {
+    justify-content: center;
+  }
+  .OppPokemon {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    text-align: right;
+  }
+  #uhp {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+  }
+  #textBox {
+    text-align: center;
+    border-radius: 4px;
+    border: 4px double red;
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 1.5rem;
+  }
+  .butt1 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #OppHP {
+    display: none;
+  }
+  .PokemonImage {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #OppHPbar {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 1;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .gridBody {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 50% 30%;
+  }
+  nav {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    grid-row-start: 0;
+    grid-row-end: 1;
+  }
+  .usePokemon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .OppPokemon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+  }
+  #textBox {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+  }
+  #uhp {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #OppHPbar {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+  }
+  #OppHP {
+    grid-column-start: 0;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #OppHP {
+    display: none;
+  }
+  #uhp {
+    display: none;
+  }
+}
+
+.selectPoke {
+  font-family: sans-serif;
+  color: black;
+}
+.PokePics {
+  display: flex;
+}
+#title1 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+input {
+  border-radius: 6px;
+}
+
+#pokemonTitle {
+}
+
+/* ----------------------------------Home Page-------------------------------------- */
+
+#homepage_Title {
+  text-align: center;
+  font-size: 30px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  font-weight: 900;
+}
+
+/* ------------------------------------About me------------------------------------------ */
+.about_info {
+  text-align: center;
+  font-size: 20px;
+}
+
+/*---------------------------------------Battle----------------------------------------------*/
+
+.userPokemonMoves {
+  display: none;
+}
+
+.Battlestats {
+  display: none;
+}
+.OppMoves {
+  display: none;
+}
+
+.Movestats {
+  display: none;
+}
+.userPokemonMoveStat {
+  display: none;
+}
+
+/* .player1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+} */
+
+button {
+  border-radius: 6px;
+  background-color: red;
+  color: yellow;
+  font-family: "Libre Franklin", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  padding: 3%;
+  border-bottom: 15px solid black;
+}
+body {
+  margin: 0px;
+  font-family: "Libre Franklin", sans-serif;
+}
+img {
+  width: 25%;
+}
+
+.OppStat {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
+#indexBody {
+  background-color: whitesmoke;
+}
+
+#homepagebody {
+  background-image: url("https://pbs.twimg.com/media/DVMT-6OXcAE2rZY.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#homepageNav {
+  background-color: greenyellow;
+  width: 15%;
+}
+.Pokemon_info {
+  font-size: 3rem;
+  text-align: center;
+}
