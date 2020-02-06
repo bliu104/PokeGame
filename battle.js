@@ -310,6 +310,8 @@ function Health() {
   document.querySelector("#userHP").append(UserData[0].Health);
   document.querySelector("#OppHP").append(OppData[0].Health);
   moveSet1(UserData);
+  let element = document.querySelector("#battle");
+  element.parentNode.removeChild(element);
 }
 function moveSet1(UserData) {
   document.querySelector(".move1").innerHTML = `${UserData[1][0].Name}`;
@@ -429,10 +431,14 @@ function PokeBattle(event) {
     document.querySelector("#textBox").innerHTML = `${
       document.querySelector(".OppPokemon").children[0].textContent
     } suddenly exploded and then died!:( Congratulations!! you won!!`;
+    let element = document.querySelector(".butt1");
+    element.parentNode.removeChild(element);
   } else if (UserHealth <= 0) {
     document.querySelector("#textBox").innerHTML = `${
       document.querySelector(".Battlestats").children[0].textContent
     } has exploded and died`;
+    let element = document.querySelector(".butt1");
+    element.parentNode.removeChild(element);
   }
 }
 
