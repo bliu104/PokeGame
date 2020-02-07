@@ -24,5 +24,6 @@ Post-MVP<br/>
 9. Condition was set to when a pokemon reach 0 or low Hp, a winner is chosen<br/>
 10. The battle was framed with HTML and styled with CSS<br/>
 
-API: The API used is the PokeAPI, it was called individual for Pokemon and moveset<br/>
+API: https://pokeapi.co <br/>
+The API used is the PokeAPI, it was called individual for Pokemon and moveset<br/>
 The App is built with Javascript, CSS and HTML using axios to extract data from PokeAPI, for the Data organization, I used Grid. This app work with all mediaqueries, however, it is optimal with computers. This will be hosted on surge.
