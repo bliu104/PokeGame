@@ -3,7 +3,7 @@ Description: PokeAssist is a Pokemon index where you can get basic information o
 
 MVP:<br/>
 
-1. used axolis to grab data from the PokeAPI/<br/>
+1. used axios to grab data from the PokeAPI/<br/>
 2. PokeAPI to grab the Pokemon and the moveset for each Pokemon.<br/>
 3. Created user and Opponent Pokemon API calls while nesting another API call to get the moveset for that Pokemon<br/>
 4. Relationally compared the moveset API data with the Pokemon API data to get move specific to that Pokemon<br/>
@@ -27,3 +27,5 @@ Post-MVP<br/>
 API: https://pokeapi.co <br/>
 The API used is the PokeAPI, it was called individual for Pokemon and moveset<br/>
 The App is built with Javascript, CSS and HTML using axios to extract data from PokeAPI, for the Data organization, I used Grid. This app work with all mediaqueries, however, it is optimal with computers. This will be hosted on surge.
+
+FrameWork: FrameWork is in the FrameWork folder in the git.
