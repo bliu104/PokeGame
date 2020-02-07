@@ -28,6 +28,16 @@
   }
   #UserIMG {
     width: 100%;
+
+    animation: push 2s linear infinite alternate;
+  }
+  @keyframes push {
+    from {
+      grid-template-rows: 0fr auto;
+    }
+    to {
+      grid-template-rows: 1fr auto;
+    }
   }
   .usePokemon {
     grid-column-start: 2;
