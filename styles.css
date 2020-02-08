@@ -6,6 +6,9 @@
     background-image: url("picture/Background3.png");
     background-size: cover;
   }
+  .carousel_image {
+    width: 60%;
+  }
 
   .Pokemon_stat {
     text-align: center;
@@ -58,7 +61,6 @@
     grid-column-end: 5;
     grid-row-start: 0;
     grid-row-end: 1;
-    text-align: center;
   }
   .PokePics {
     justify-content: center;
@@ -109,6 +111,17 @@
     grid-row-start: 0;
     grid-row-end: 1;
   }
+  .navBar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding: 0.75rem;
+    background-color: black;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 @media only screen and (max-width: 400px) {
   .gridBody {
@@ -116,11 +129,15 @@
     grid-template-columns: 40% 60%;
     grid-template-rows: 20% 50% 30%;
   }
-  nav {
-    grid-column-start: 0;
-    grid-column-end: 1;
-    grid-row-start: 0;
-    grid-row-end: 1;
+  .carousel_image {
+    width: 100%;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
   }
   .usePokemon {
     grid-column-start: 1;
@@ -167,8 +184,22 @@
   #uhp {
     display: none;
   }
+  #pokemonTitle {
+    width: 100px;
+  }
 }
 
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 .selectPoke {
   font-family: sans-serif;
   color: black;
@@ -184,7 +215,8 @@ input {
   border-radius: 6px;
 }
 
-#pokemonTitle {
+body {
+  top: 0;
 }
 
 /* ----------------------------------Home Page-------------------------------------- */
@@ -209,6 +241,9 @@ input {
   display: none;
 }
 
+a:hover {
+  color: red;
+}
 .Battlestats {
   display: none;
 }
@@ -241,7 +276,6 @@ header {
   justify-content: center;
   background-color: red;
   padding: 3%;
-  border-bottom: 15px solid black;
 }
 body {
   margin: 0px;
@@ -258,7 +292,7 @@ ul {
   list-style-type: none;
 }
 #indexBody {
-  background-color: whitesmoke;
+  background-image: url("https://wallpaperplay.com/walls/full/3/0/6/278167.jpg");
 }
 
 #homepagebody {
@@ -274,4 +308,47 @@ ul {
 .Pokemon_info {
   font-size: 3rem;
   text-align: center;
+}
+
+/* ----------------------------------wrap-------------------------- */
+
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel_track-container {
+  height: 60%;
+  background-color: rgb(248, 191, 239, 0.4);
+}
+.caousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel_slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  top: 7%;
+  height: 50%;
+}
+.carousel_button {
+  position: absolute;
+  top: 70%;
+}
+.carousel_button--right {
+  right: 30%;
+  font-size: 150%;
+}
+.carousel_button--left {
+  left: 30%;
+  font-size: 150%;
+}
+html {
+  overflow-x: hidden;
 }

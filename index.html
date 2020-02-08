@@ -21,20 +21,30 @@
     <header>
       <img id="pokemonTitle" src="picture/Pokemon.png" />
     </header>
-    <div class="gridBodyIndex">
-      <nav>
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="index.html">PokéSearch</a></li>
-          <li><a href="battle.html">Battle</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul class="navBar">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="index.html">PokéSearch</a></li>
+        <li><a href="battle.html">Battle</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
 
+    <div class="carousel">
+      <button class="carousel_button carousel_button--right">right</button>
+      <div class="carousel_track-container">
+        <ul class="caousel_track"></ul>
+      </div>
+      <button class="carousel_button carousel_button--left">left</button>
+    </div>
+
+    <div class="carousel_nav"></div>
+
+    <div class="gridBodyIndex">
       <div class="selectPokeIndex">
         <h1 id="title1">Pokédex</h1>
         <input type="text" />
-        <button id="GO!"><i class="fa fa-search"></i></button>
+        <button id="button1"><i class="fa fa-search"></i></button>
       </div>
       <div class="Pokemon_info"></div>
       <div class="PokePics"></div>
