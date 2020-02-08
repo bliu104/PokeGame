@@ -197,7 +197,7 @@
     display: none;
   }
   #pokemonTitle {
-    width: 20%;
+    width: 100%;
   }
   .carousel_button {
     position: absolute;
