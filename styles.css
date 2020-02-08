@@ -122,6 +122,18 @@
     text-decoration: none;
     color: white;
   }
+  .carousel_button {
+    position: absolute;
+    top: 70%;
+  }
+  .carousel_button--right {
+    right: 30%;
+    font-size: 150%;
+  }
+  .carousel_button--left {
+    left: 30%;
+    font-size: 150%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .gridBody {
@@ -185,7 +197,19 @@
     display: none;
   }
   #pokemonTitle {
-    width: 100px;
+    width: 50%;
+  }
+  .carousel_button {
+    position: absolute;
+    top: 70%;
+  }
+  .carousel_button--right {
+    right: 10%;
+    font-size: 150%;
+  }
+  .carousel_button--left {
+    font-size: 150%;
+    left: 10%;
   }
 }
 
@@ -337,18 +361,7 @@ ul {
   top: 7%;
   height: 50%;
 }
-.carousel_button {
-  position: absolute;
-  top: 70%;
-}
-.carousel_button--right {
-  right: 30%;
-  font-size: 150%;
-}
-.carousel_button--left {
-  left: 30%;
-  font-size: 150%;
-}
+
 html {
   overflow-x: hidden;
 }
